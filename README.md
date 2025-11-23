@@ -42,15 +42,16 @@
 
 2. ツリー構造で「**Users**」→「**あなたのメールアドレス**」フォルダを展開
 
-3. あなたのフォルダを右クリックし、コンテキストメニューから「**Import**」を選択
+3. あなたのフォルダを右クリックし、コンテキストメニューから「**Create**」を選択
 
-4. Import画面で以下を設定：
-   - **Import from**: 「**Git repository**」を選択
+4. Create画面で以下を設定：
+   - 「**Git folder**」を選択
    - **Git repository URL**: 
      ```
      https://github.com/ureshiii-yu/dbx_handson
      ```
-   - **Repository name**: `dbx_handson`（自動入力）
+   - **Git provider**: 「**GitHub**」を選択
+   - **Git folder name**: `dbx_handson`（自動入力）
 
 5. 「**Clone**」ボタンをクリック
 
