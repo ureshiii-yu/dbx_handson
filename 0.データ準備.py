@@ -207,7 +207,7 @@ for row in date_column_list.collect():
 # DBTITLE 1,余分なカラムを除外
 # MAGIC %sql
 # MAGIC ALTER TABLE bronze_employees SET TBLPROPERTIES ('delta.columnMapping.mode' = 'name'); 
-# MAGIC ALTER TABLE bronze_employees DROP COLUMNS (_c13, _c14, _c15, _c16, _c17, _c18);
+# MAGIC ALTER TABLE bronze_employees DROP COLUMNS (Unnamed13, Unnamed14, Unnamed15, Unnamed16, Unnamed17, Unnamed18);
 
 # COMMAND ----------
 
