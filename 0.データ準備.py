@@ -55,7 +55,8 @@ data_path = f"/Volumes/{catalog}/{schema}/volume/data"
 
 # DBTITLE 1,ロード対象csvの設定
 # Base URL for raw GitHub files
-BASE_URL = "https://raw.githubusercontent.com/skotani-db/jsug-handson/main/data"
+# BASE_URL = "https://raw.githubusercontent.com/skotani-db/jsug-handson/main/data" 
+BASE_URL = "https://raw.githubusercontent.com/ureshiii-yu/dbx_handson/main/data"
 
 # CSV files to download
 CSV_FILES = [
