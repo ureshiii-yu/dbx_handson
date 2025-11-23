@@ -104,17 +104,17 @@
 
    **Data Configuration:**
    - **Training dataset**: 手順6で作成した特徴量テーブルを選択 例: workspace.default.feature_sales_by_product
-   - **Time column**: タイムスタンプ列を選択 例: FISCAL_YEAR_MONTH
+   - **Time column**: タイムスタンプ列を選択 
    - **Forecast frequency**: `Monthly` を選択
    - **Forecast horizon**: `3` を入力
    - **Prediction Target column**: 売上データの対象列を選択 例:TOTAL_NETAMOUNT
    - **Prediction data path**: `workspace.default`（任意）
-   - **Prediction Table name**: `forecast_predictions_Ureshino`（任意）
+   - **Prediction Table name**: `forecast_predictions_ureshino`（任意）
    - **Model registration Register to location**: `workspace.default`（任意）
-   - **Model name**: `forecast_model_Ureshino`（任意）
+   - **Model name**: `forecast_model_ureshino`（任意）
 
    **Advanced options** を展開
-   - **Experiment name**: `forecast_experiment_Ureshino`（任意）
+   - **Experiment name**: `forecast_experiment_ureshino`（任意）
    - **Holiday region**: `Japan`
    - **Timeout**: `15 minutes`
    - そのほかの項目は自動入力のまま
@@ -128,7 +128,7 @@
 1. 「**1. AI分析**」ノートブックに戻る
 
 2. 結果確認用の関数セルを実行（約5分）
-   - 指定されたセルの「▶」ボタンをクリック
+   - 「地域別の売上予測を返す関数」指定されたセルの「▶」ボタンをクリック
 
 3. 関数作成完了を確認
 
