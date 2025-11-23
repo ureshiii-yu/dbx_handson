@@ -103,19 +103,21 @@
 4. AutoML設定画面で以下を入力：
 
    **Data Configuration:**
-   - **Training dataset**: 手順6で作成した特徴量テーブルを選択
-   - **Prediction target**: 売上データの対象列を選択
-   - **Time column**: タイムスタンプ列を選択
-   - **Forecast horizon**: `Monthly` を選択
+   - **Training dataset**: 手順6で作成した特徴量テーブルを選択 例: workspace.default.feature_sales_by_product
+   - **Time column**: タイムスタンプ列を選択 例: FISCAL_YEAR_MONTH
+   - **Forecast frequency**: `Monthly` を選択
+   - **Forecast horizon**: `3` を入力
+   - **Prediction Target column**: 売上データの対象列を選択 例:TOTAL_NETAMOUNT
+   - **Prediction data path**: `workspace.default`（任意）
+   - **Prediction Table name**: `forecast_predictions_Ureshino`（任意）
+   - **Model registration Register to location**: `workspace.default`（任意）
+   - **Model name**: `forecast_model_Ureshino`（任意）
 
-   **Output Configuration:**
-   - **Experiment name**: `forecast_experiment`（任意）
-   - **Model name**: `forecast_model`（任意）
-   - **Output schema**: データ準備で使用したスキーマを選択
-   - **Predictions table name**: `forecast_predictions`
-
-   **Advanced Configuration:**
+   **Advanced options** を展開
+   - **Experiment name**: `forecast_experiment_Ureshino`（任意）
+   - **Holiday region**: `Japan`
    - **Timeout**: `15 minutes`
+   - そのほかの項目は自動入力のまま
 
 5. 「**Start AutoML**」ボタンをクリック
 
