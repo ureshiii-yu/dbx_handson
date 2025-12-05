@@ -53,7 +53,7 @@
    - **Git provider**: 「**GitHub**」を選択
    - **Git folder name**: `dbx_handson`（自動入力）
 
-5. 「**Clone**」ボタンをクリック
+5. 「**Gitフォルダを作成**」ボタンをクリック
 
 6. クローン完了後、左サイドバーのWorkspaceツリーに`dbx_handson`フォルダが表示されることを確認
 
