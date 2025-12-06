@@ -138,7 +138,7 @@
       predictions_sdf = spark.createDataFrame(final_df)
 
       # 保存したいテーブル名（Unity Catalogのフルパス推奨）
-      target_table = "workspace.default.sales_forecast_predictions"
+      target_table = "workspace.default.forecast_predictions_ureshino"
 
       print("Saving predictions to:", target_table)
 
