@@ -126,26 +126,7 @@
 
 6. AutoMLの実行開始を確認し、完了まで待機（約15分）
 
-7. 自動的に**Prediction Table name**　ができているか確認。できていない場合は次の手順を行う。テーブルが既にできている場合は8~10はスキップする
-
-8. AutoMLが終了するとベストモデルが表示されている。その下の「**Batch inference notebook**」ボタンをクリック
-
-9. 自動的にnotebookが表示されるので上から順にセルをすべて実行する
-
-10. 最後にセルを一つ追加し、下記をコピペする。テーブル名は任意
-     ```
-     # final_df（pandas DataFrame）をSpark DataFrameに変換
-      predictions_sdf = spark.createDataFrame(final_df)
-
-      # 保存したいテーブル名（Unity Catalogのフルパス推奨）
-      target_table = "workspace.default.forecast_predictions_ureshino"
-
-      print("Saving predictions to:", target_table)
-
-      predictions_sdf.write.format("delta").mode("overwrite").saveAsTable(target_table)
-     ```    
-
-11. テーブルが作成されたか確認する
+7. 自動的に**Prediction Table name**　ができているか確認する
 
 ### 8. 結果確認関数の作成
 
